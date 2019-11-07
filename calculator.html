@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <style>
+     body{
+         font-family: Helvetica;
+         background: #4b4a4a;
+     }
+      .calculator {
+        display: grid;
+
+        grid-template-areas: "a a a a"
+                            "key1 key2 key3 key4"
+                            "key5 key6 key7 key8"
+                            "key9 key10 key11 key12"
+                            "key13 key14 key15 key16"
+                            "key17 key19 key18 key18"
+                            
+
+      }
+      .answer{
+          grid-area: a;
+          background: #212020;
+          color:white;
+          padding: 1rem;
+          font-size: 4rem;
+          font-weight: bold;
+          text-align: right;
+      }
+
+
+      #clear {
+          grid-area: key1;
+
+        }
+      #plus{grid-area: key2;}
+      #percent{grid-area: key3;}
+      button{
+          border: none;
+          padding: 1em;
+          margin:.5em;
+          font-size: 1.5rem;
+          transition: .1s ease;
+          border-radius: 4px;
+      }
+      button:hover{
+          background:#a2a2a2;
+      }
+      #divide{grid-area: key4;}
+      #multiply{grid-area: key5;}
+      #subtract{grid-area: key6;}
+      #add{grid-area: key7;}
+      #equal{grid-area: key8;}
+
+      #nine{grid-area: key9;}
+      #eight{grid-area: key10;}
+      #seven{grid-area: key11;}
+      #six{grid-area: key12;}
+      #five{grid-area: key13;}
+      #four{grid-area: key14;}
+      #three{grid-area: key15;}
+      #two{grid-area: key16;}
+      #one{grid-area: key17;}
+      #zero{grid-area: key18;}
+      #dot{grid-area: key19;}
+    </style>
+  </head>
+  <body>
+
+    <div class="calculator">
+      <div class="answer">3.14</div>
+      <button id="clear">C</button>
+      <button id="plus">+/-</button>
+      <button id="percent">%</button>
+
+      <button id="divide">/</button>
+      <button id="multiply">X</button>
+      <button id="subtract">-</button>
+      <button id="add">+</button>
+      <button id="equal">=</button>
+
+      <button id="nine">9</button>
+      <button id="eight">8</button>
+      <button id="seven">7</button>
+
+      <button id="six">6</button>
+      <button id="five">5</button>
+      <button id="four">4</button>
+
+      <button id="three">3</button>
+      <button id="two">2</button>
+      <button id="one">1</button>
+
+      <button id="zero">0</button>
+      <button id="dot">.</button>
+      
+    </div>
+
+  </body>
+</html>
